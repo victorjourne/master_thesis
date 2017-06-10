@@ -15,22 +15,24 @@ Three sub problems solved:
            How far each observer can be trusted?
 
 2. Simultaneous localisation and mapping (SLAM)
-A pltatform moves upon a binary  unknown pattern
+A pltatform moves upon a binary  unknown pattern. 
+Assumptions: rigid motion of the platform (translations only) + measurement model of 1.
 Goal: How simultaneously recover the pattern and the platform position?
-
-3. Targets tracking
-Three cameras in a cluttered environnent, with occlusion
-Ponctual targets, brownian movment. Targets can appear or disappear
-Goal: Track targets 
-
+Example: left video is measurements, right one is the posterior probability map to have targets; the rebuilt map
 
 ![](https://github.com/victorjourne/master_thesis/blob/master/measurement.gif)
 ![](https://github.com/victorjourne/master_thesis/blob/master/map.gif)
 
-
-[See my report](Thesis_Victor.pdf)
-
-
+A new bayesian filter is introduced:
 ![](https://github.com/victorjourne/master_thesis/blob/master/bayesian_filter.jpg)
+
+3. Targets tracking (Applications)
+Three cameras in a cluttered environnent, with occlusion
+Ponctual targets, brownian movment. Targets can appear or disappear
+Goal: Track targets 
+
+To go deeper, [see my report](Thesis_Victor.pdf)
+
+
 
 .
